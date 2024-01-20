@@ -115,6 +115,38 @@ body {
     }
 }
 
+
+.page__search-clear {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s ease;
+    box-sizing: content-box;
+    padding: 20px 40px;
+    cursor: pointer;
+    fill: none;
+    stroke: #bbb;
+    stroke-width: 4;
+    stroke-linecap: round;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.page__search-clear:hover {
+    stroke: #e53935;
+}
+
+@media screen and (max-width: 1480px) {
+    .page__search-clear {
+        width: 14px;
+        height: 14px;
+        padding: 20px;
+    }
+}
+
 .page__modificators {
     padding: 0;
     margin: -4px;

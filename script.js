@@ -3,8 +3,9 @@ import { roles } from "./data.js";
 document.addEventListener("DOMContentLoaded", () => {
     const elements = {
         rolesParent: document.querySelector(".page__roles"),
-        searchInput: document.querySelector(".page__search-input"),
         emptyBox: document.querySelector(".page__empty-box"),
+        searchInput: document.querySelector(".page__search-input"),
+        clearInput: document.querySelector(".page__search-clear"),
     }
 
     elements.roles = roles.map(item => {
@@ -31,6 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.rolesParent.appendChild(card)
 
         return card
+    })
+
+    elements.clearInput.addEventListener("click", () => {
+        elements.searchInput.value = "";
+        window.filterRoles()    
     })
 
     window.filterRoles = () => {
