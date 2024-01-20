@@ -3,7 +3,7 @@ import { roles } from "./data.js";
 document.addEventListener("DOMContentLoaded", () => {
     const elements = {
         rolesParent: document.querySelector(".page__roles"),
-        searchInput: document.querySelector(".page__search"),
+        searchInput: document.querySelector(".page__search-input"),
         emptyBox: document.querySelector(".page__empty-box"),
     }
 
